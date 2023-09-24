@@ -7,9 +7,9 @@ import ProductDetail from "./pages/ProductDetail";
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout />,errorElement: <ErrorPage />, children: [
-    {path: '/', element: <Home />},
-    {path: '/products', element: <Products />},
-    {path: '/products/:productId', element: <ProductDetail />}
+    {index: true, element: <Home />},
+    {path: 'products', element: <Products />},
+    {path: 'products/:productId', element: <ProductDetail />}
   ],}
 ])
 function App() {
